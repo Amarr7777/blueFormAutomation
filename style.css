@@ -153,3 +153,6 @@ form {
     background-color: black;
     border: white;
 }
+.column{
+    display: flex;
+}

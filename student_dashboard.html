@@ -45,7 +45,7 @@
     <!--cards-->
     <div class="container">
         <div class="dashboard_cards_case">
-            <div class="dashboard_cards " >
+            <div class="dashboard_cards ">
                 <div class="card" onmouseover="zoomIn1(this)" onmouseout="normal1(this)" id="card1">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -73,29 +73,130 @@
                         <button onclick="document.getElementById('id01').style.display='block'"
                             class="btn btn-primary">Apply</button>
                     </div>
-                </div>              
+                </div>
             </div>
         </div>
     </div>
     </div>
 
     <!--modal code-->
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content">
-            <header class="w3-container w3-teal">
-                <span onclick="document.getElementById('id01').style.display='none'"
-                    class="w3-button w3-display-topright">&times;</span>
-                <h2>Modal Header</h2>
-            </header>
-            <div class="w3-container">
-                <p>Some text..</p>
-                <p>Some text..</p>
+    <div id="id01" class="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--blue-form-->
+                <div class="modal-body">
+                    <!--name-->
+                    <div class="input-group mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <!--class-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Class</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!--reg no-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Reg. No</span>
+                            <input type="number" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+                    </div>
+                    <!--period of leave-->
+                    <div class="column">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Period of Leave</span>
+                            <input type="number" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!--Days from-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Days From:</span>
+                            <input type="date" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!--Days to-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">To</span>
+                            <input type="date" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                    <!--Reason-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Reason:</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <!--Date of submission-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Date of Submission:</span>
+                        <input type="date" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <!--file upload-->
+                    <div class="mb-3">
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                    <!--table-->
+                    <div class="column">
+                        <!--subject code-->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Subject</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">STA631N</option>
+                                <option value="2">STA641AN</option>
+                                <option value="3">MAT641EN</option>
+                                <option value="4">MAT631N</option>
+                                <option value="5">CSC631N</option>
+                                <option value="6">CSC641BN</option>
+                                <option value="7">MAT651N</option>
+                                <option value="8">MAT651EN</option>
+                                <option value="9">SAT651N</option>
+                                <option value="10">SAT652AN</option>
+                                <option value="11">CSC681N</option>
+                                <option value="12">Mentoring</option>
+                            </select>
+                        </div>
+                        <!--Name of teacher-->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Name of the Teacher</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <!--No.of periods-->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">No.of Periods</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
-            <footer class="w3-container w3-teal">
-                <p>Modal Footer</p>
-            </footer>
         </div>
-    </div>
     </div>
 
     <!--footer-->
