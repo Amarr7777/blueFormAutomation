@@ -34,11 +34,3 @@ function normal1(){
     x2.style.filter = "blur(0px)";
     x3.style.filter = "blur(0px)";
 }
-
-/*modal script*/
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
