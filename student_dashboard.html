@@ -42,17 +42,17 @@
         </ul>
     </nav>
     <!--main Body-->
+    <!--cards-->
     <div class="container">
         <div class="dashboard_cards_case">
-            <div class="dashboard_cards " style="width: auto; height: 25rem;">
+            <div class="dashboard_cards " >
                 <div class="card" onmouseover="zoomIn1(this)" onmouseout="normal1(this)" id="card1">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">New Application</h5>
                         <p class="card-text">Apply a new application</p>
-                        <a data-target="#exampleModal" class="btn btn-primary">Apply</a>
                         <button onclick="document.getElementById('id01').style.display='block'"
-                            class="w3-button w3-black">Apply</button>
+                            class="btn btn-primary">Apply</button>
                     </div>
                 </div>
                 <div class="card" onmouseover="zoomIn2(this)" onmouseout="normal1(this)" id="card2">
@@ -60,7 +60,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Application Status</h5>
                         <p class="card-text">Check the status of your current Application(s)</p>
-                        <a data-target="#exampleModal" class="btn btn-primary">Check</a>
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                            class="btn btn-primary">Check</button>
                     </div>
                 </div>
                 <div class="card" onmouseover="zoomIn3(this)" onmouseout="normal1(this)" id="card3">
@@ -69,9 +70,10 @@
                         <h5 class="card-title"></h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a data-target="#exampleModal" class="btn btn-primary">Apply</a>
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                            class="btn btn-primary">Apply</button>
                     </div>
-                </div>
+                </div>              
             </div>
         </div>
     </div>
