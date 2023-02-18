@@ -12,6 +12,8 @@
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blue Form</title>
+    <!--w3school-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body class="student_dashboard">
@@ -43,31 +45,53 @@
     <div class="container">
         <div class="dashboard_cards_case">
             <div class="dashboard_cards " style="width: auto; height: 25rem;">
-                <div class="card"  onmouseover="zoomIn1(this)" onmouseout="normal1(this)" id="card1">
+                <div class="card" onmouseover="zoomIn1(this)" onmouseout="normal1(this)" id="card1">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">New Application</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">Apply a new application</p>
+                        <a data-target="#exampleModal" class="btn btn-primary">Apply</a>
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                            class="w3-button w3-black">Apply</button>
                     </div>
                 </div>
-                <div class="card"  onmouseover="zoomIn2(this)" onmouseout="normal1(this)" id="card2">
+                <div class="card" onmouseover="zoomIn2(this)" onmouseout="normal1(this)" id="card2">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Application Status</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">Check the status of your current Application(s)</p>
+                        <a data-target="#exampleModal" class="btn btn-primary">Check</a>
                     </div>
                 </div>
-                <div class="card"  onmouseover="zoomIn3(this)" onmouseout="normal1(this)" id="card3">
+                <div class="card" onmouseover="zoomIn3(this)" onmouseout="normal1(this)" id="card3">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
+                        <a data-target="#exampleModal" class="btn btn-primary">Apply</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+
+    <!--modal code-->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container">
+                <p>Some text..</p>
+                <p>Some text..</p>
+            </div>
+            <footer class="w3-container w3-teal">
+                <p>Modal Footer</p>
+            </footer>
         </div>
     </div>
     </div>

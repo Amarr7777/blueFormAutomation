@@ -141,3 +141,15 @@ form {
 .card-img-top{
     padding: 0%;
 }
+.card-body button:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: white;
+}
+.card-body button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: white;
+}
