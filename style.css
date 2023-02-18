@@ -156,3 +156,6 @@ form {
 .column{
     display: flex;
 }
+.modal_form{
+    padding-left: 0%;
+}
