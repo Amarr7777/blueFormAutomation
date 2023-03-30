@@ -34,3 +34,22 @@ function normal1(){
     x2.style.filter = "blur(0px)";
     x3.style.filter = "blur(0px)";
 }
+
+var total;
+
+// To auto limit based on the number of options
+// total = $("#nativelangdrop").find("option").length - 1;
+
+// Hard code a limit
+total = 5;
+
+
+$("#addBtn").on("click", function() {
+    var ctr = $("#additional").find(".extra").length;
+    if (ctr < total) {
+        var $ddl = $("#nativelangdrop").clone();
+        $ddl.attr("id", "ddl" + ctr);
+        $ddl.addClass("extra");
+        $("#additional").append($ddl);
+    }
+});

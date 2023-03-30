@@ -1,6 +1,10 @@
 .navbar-collapse {
     margin-left: 10%;
 }
+h3{
+    padding-left: 8%;
+    color:#092545;
+}
 
 .login {
     background-image: url("images/login_bg.jpg");
@@ -51,18 +55,43 @@ form {
     width: 100%;
     border-radius: 0px;
 }
-
+.loginn_footer {
+    position: sticky;
+    display: flex;
+    margin-top: 2%;
+    background-color: whitesmoke;
+}
 .login_footer {
     position: sticky;
     display: flex;
     margin-top: 2%;
     background-color: whitesmoke;
+}
+.loginn_footer .login_contact{
     padding-top: 1%;
     padding-left: 65%;
     padding-right: 5%;
     padding-bottom: 3%;
 }
-
+.login_footer .login_contact{
+    padding-top: 1%;
+    padding-left: 55%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+.login_footer .updates{
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+.login_footer .updates a{
+    text-decoration: none;
+    color:#092545;
+}
+.login_footer .updates a:hover{
+    text-decoration: none;
+    color:#1177d1;
+}
 .uni_name {
     font-size: x-large;
 }
@@ -161,4 +190,47 @@ form {
 }
 .add{
     padding: 1%;
+}
+.add_btn i{
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-right: 100%;
+}
+.add_btn i.fa::before{
+    font-size: 25px;
+    color: gray;    
+}
+.dashboard_HC_cards_case{
+    background-color: white;
+    padding: 2%;
+    box-shadow: 2px 2px 8px 2px #092545;
+    height: 500px;
+}
+.hc_card{
+    background-color: white;
+    margin: 2%;
+    box-shadow: 2px 2px 8px 2px;
+    height: 50px;
+    opacity: 50%;
+    border-radius: 5px;
+}
+.app_num_hc{
+    padding-left: 2%;
+    padding-right: 5%;
+    opacity: 10%;
+}
+.name_hc{
+    padding-left: 2%;
+    padding-right: 5%;
+}
+.reg_no_hc{
+    padding-left: 2%;
+    padding-right: 5%;
+}
+.view_hc{
+    padding-left: 2%;
+    padding-right: 5%;
+}
+.HC_dashboard{
+    background-image: url("images/hc_bg_img.jpg");
 }
