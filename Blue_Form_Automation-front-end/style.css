@@ -1,0 +1,90 @@
+.navbar-collapse {
+    margin-left: 10%;
+}
+
+.login{
+    background-image: url("images/login_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    margin-top: 1.5%;
+    margin-left: 28%;
+    border-radius: 0px;
+}
+
+.card-body {
+    display: flex;
+}
+
+form {
+    padding-left: 15%;
+    padding-top: 0%;
+}
+
+.form-group {
+    padding: 3%;
+}
+.form-control{
+    border-radius: 0px;
+}
+.forgot_and_cookies {
+    padding-top: 3%;
+    padding-left: 10%;
+}
+
+.forgot {
+    color: #1177d1;
+    ;
+}
+
+.cookies {
+    padding-top: 5%;
+}
+
+.card-img-top {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+#loginbtn {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    border-radius: 0px;
+}
+.login_footer{
+    display: flex;
+    margin-top: 2%;
+    background-color: white;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.uni_name{
+    font-size: x-large;
+}
+.login_socialmedia{
+    align-items: center;
+}
+.login_socialmedia i{
+    padding-right: 2%;
+    border-radius: 5px;
+    font-size:25px;
+    color:#5bc0de;
+}
+.reason{
+    margin-bottom: 5%;
+}
+.uoload{
+    margin: 5%;
+}
