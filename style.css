@@ -114,7 +114,9 @@ form {
 .nav a {
     color: grey;
 }
-
+.sub{
+    text-decoration: none;
+}
 .blueform img {
     position: sticky;
 }
@@ -141,6 +143,9 @@ form {
 }
 .student_dashboard .navbar .nav .nav-item .dropdown-menu .dropdown-item {
     color:#092545;
+}
+.table .column{
+    padding: 0%;
 }
 .dropdown-toggle{
     background-color: whitesmoke;
@@ -281,4 +286,74 @@ form {
 .HC_footer .updates a:hover{
     text-decoration: none;
     color:#1177d1;
+}
+.app_number_sd{
+    width: 300px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.reg_no_sd{
+    width: 300px;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.status_sd{
+    width: 100px;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.app_number_fd{
+    width: 200px;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.reg_no_fd{
+    width: 300px;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.reason_fd{
+    width: 400px;
+    opacity: 100%;
+}
+.app_number_afd{
+    width: 300px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.reg_no_afd{
+    width: 300px;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    opacity: 100%;
+}
+.status_afd{
+    color: green;
+}
+.app_number_rfd{
+    width: 300px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.reg_no_rfd{
+    width: 300px;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    opacity: 100%;
+}
+.status_rfd{
+    color: red;
 }

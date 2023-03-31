@@ -22,7 +22,7 @@
         <a class="navbar-brand" href="#"><img
                 src="https://ncrcourses.christuniversity.in/pluginfile.php/1/core_admin/logo/0x200/1630494788/LOGO%20PNG.png"
                 alt="" height="50px"></a>
-        <h3>BLUE FORM AUTOMATION</h3>
+        <h3>Blue Form Automation</h3>
 
         <ul class="nav nav-pills ">
             <li class="nav-item">
@@ -50,95 +50,83 @@
                 <div class="card" onmouseover="zoomIn1(this)" onmouseout="normal1(this)" id="card1">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">New Application</h5>
+                        <h5 class="card-title">Applications pending</h5>
                         <p class="card-text">Apply a new application</p>
-                        <button data-bs-toggle="modal" data-bs-target="#id01" class="btn btn-primary">Apply</button>
+                        <button data-bs-toggle="modal" data-bs-target="#id02" class="btn btn-primary">Check</button>
                     </div>
                 </div>
                 <div class="card" onmouseover="zoomIn2(this)" onmouseout="normal1(this)" id="card2">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Application Status</h5>
+                        <h5 class="card-title">Application accepted</h5>
                         <p class="card-text">Check the status of your current Application(s)</p>
-                        <button data-bs-toggle="modal" data-bs-target="#id02" class="btn btn-primary">Check</button>
+                        <button data-bs-toggle="modal" data-bs-target="#id03" class="btn btn-primary">Check</button>
                     </div>
                 </div>
                 <div class="card" onmouseover="zoomIn3(this)" onmouseout="normal1(this)" id="card3">
                     <img src="images/main_bg.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <button data-bs-toggle="modal" data-bs-target="#id0" class="btn btn-primary">Apply</button>
+                        <h5 class="card-title">Applications rejected</h5>
+                        <p class="card-text">Some quick example text to build on the card title </p>
+                        <button data-bs-toggle="modal" data-bs-target="#id04" class="btn btn-primary">Check</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <!--modal code new application(upload and reason only)-->
-    <div id="id01" class="modal">
-        <div class="modal-dialog modal-dailog-scrollable modal-lg">
+
+    <div id="id02" class="modal">
+        <div class="modal-dialog modal-dailog-scrollable modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Medical Leave Form</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Application Status</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!--blue-form-->
                 <div class="modal-body">
-                    <form class="modal_form" action="">
-                        <!--Reason-->
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Reason:</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default" required>
-                        </div>
-                        <!--file upload-->
-                        <div class="mb-3">
-                            <input class="form-control" type="file" id="formFileMultiple" multiple required>
-                        </div>
+                    <div class="hc_card">
+                        <label class="app_number_fd">1081</label>
+                        <label class="reg_no_fd">20218013</label>
+                        <label class="reason_fd">upper tract respiratory infection</label>
+                        <button data-bs-toggle="modal" data-bs-target="#id002" class="btn btn-secondary">View Request</button>
+                        <br>
+                        <hr>
+                    </div>
                 </div>
-                </form>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button data-bs-toggle="modal" data-bs-target="#id001" class="btn btn-primary">Upload</button>
-                    </button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--modal code new application-->
-    <div id="id001" class="modal">
+    <div id="id002" class="modal">
         <div class="modal-dialog modal-dailog-scrollable modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Medical Leave Form</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Application Status</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!--blue-form-->
                 <div class="modal-body">
                     <form class="modal_form" action="">
                         <!--name-->
                         <div class="input-group mb-3">
                             <div class="input-group">
                                 <span class="input-group-text">First and last name</span>
-                                <input type="text" aria-label="First name" class="form-control" required>
-                                <input type="text" aria-label="Last name" class="form-control" required>
+                                <label type="text" aria-label="First name" class="form-control" required></label>
+                                <label type="text" aria-label="Last name" class="form-control" required></label>
                             </div>
                         </div>
                         <div class="column">
                             <!--class-->
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Class</span>
-                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
+                                <label type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" required></label>
                             </div>
                             <!--reg no-->
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Reg. No</span>
-                                <input type="number" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
+                                <label type="number" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" required></label>
                             </div>
 
                         </div>
@@ -146,27 +134,27 @@
                         <div class="column">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Period of Leave</span>
-                                <input type="number" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
+                                <label type="number" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" required></label>
                             </div>
                             <!--Days from-->
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Days From:</span>
-                                <input type="date" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
+                                <label type="date" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" required></label>
                             </div>
                             <!--Days to-->
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">To</span>
-                                <input type="date" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" required>
+                                <label type="date" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" required></label>
                             </div>
                         </div>
                         <!--Date of submission-->
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Date of Submission:</span>
-                            <input type="date" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default" required>
+                            <label type="date" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" required></label>
                         </div>
                         <!--table-->
                         <div class="table" id="table">
@@ -174,73 +162,33 @@
                                 <!--subject code-->
                                 <div class="input-group mb-3">
                                     <label class="input-group-text" for="inputGroupSelect01">Subject</label>
-                                    <select class="form-select" id="inputGroupSelect01" required>
-                                        <option selected>Choose...</option>
-                                        <option value="1">STA631N</option>
-                                        <option value="2">STA641AN</option>
-                                        <option value="3">MAT641EN</option>
-                                        <option value="4">MAT631N</option>
-                                        <option value="5">CSC631N</option>
-                                        <option value="6">CSC641BN</option>
-                                        <option value="7">MAT651N</option>
-                                        <option value="8">MAT651EN</option>
-                                        <option value="9">SAT651N</option>
-                                        <option value="10">SAT652AN</option>
-                                        <option value="11">CSC681N</option>
-                                        <option value="12">Mentoring</option>
-                                    </select>
+                                    <label type="date" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required></label>
                                 </div>
                                 <!--Name of teacher-->
                                 <div class="input-group mb-3">
                                     <label class="input-group-text" for="inputGroupSelect01">Name of the Teacher</label>
-                                    <select class="form-select" id="inputGroupSelect01" required>
-                                        <option selected>Choose...</option>
-                                        <option value="1">Dr.Asish</option>
-                                        <option value="2">Dr.Chandraketu</option>
-                                        <option value="3">Dr.Riya</option>
-                                        <option value="4">Dr.Ansa</option>
-                                        <option value="5">Dr.Shilpa</option>
-                                        <option value="6">Ms.vandana</option>
-                                        <option value="7">Dr.Jawahar</option>
-                                        <option value="8">Dr.Bosco</option>
-                                        <option value="9">Dr.Abhinav</option>
-                                    </select>
+                                    <label type="date" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required></label>
                                 </div>
                                 <!--No.of periods-->
                                 <div class="input-group mb-3">
                                     <label class="input-group-text" for="inputGroupSelect01">No.of Periods</label>
-                                    <select class="form-select" id="inputGroupSelect01" required>
-                                        <option selected>Choose...</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                        <option value="4">Four</option>
-                                        <option value="5">Five</option>
-                                        <option value="6">Six</option>
-                                        <option value="7">Seven</option>
-                                        <option value="8">Eight</option>
-                                        <option value="9">Nine</option>
-                                        <option value="10">Ten</option>
-                                    </select>
-                                </div>
-                                <!--add icon-->
-                                <div class="add_btn" name="addrow" name="Addrow" value='Add row' onclick="add_row()">
-                                    <a><i class="fa fa-plus-square" id="addBtn" aria-hidden="true"></i></a>
+                                    <label type="date" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required></label>
                                 </div>
                             </div>
                         </div>
                 </div>
                 </form>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="refresh_row()">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Approve</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reject</button>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <!--modal code application status-->
-    <div id="id02" class="modal">
+    <div id="id03" class="modal">
         <div class="modal-dialog modal-dailog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -249,9 +197,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="hc_card">
-                        <label class="app_number_sd">1081</label>
-                        <label class="reg_no_sd">20218013</label>
-                        <label class="status_sd">pending</label>
+                        <label class="app_number_afd">1081</label>
+                        <label class="reg_no_afd">20218013</label>
+                        <label class="status_afd">Approved</label>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -260,7 +208,27 @@
             </div>
         </div>
     </div>
-
+    <div id="id04" class="modal">
+        <div class="modal-dialog modal-dailog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Application Status</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="hc_card">
+                        <label class="app_number_rfd">1081</label>
+                        <label class="reg_no_rfd">20218013</label>
+                        <label class="status_rfd">Rejected</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!--footer-->
     <section class="login_footer">
         <div class="updates">
@@ -288,6 +256,5 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 <script src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </html>
