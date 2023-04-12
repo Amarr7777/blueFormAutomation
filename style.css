@@ -2,7 +2,7 @@
     margin-left: 10%;
 }
 h3{
-    padding-left: 8%;
+    
     color:#092545;
 }
 
@@ -11,6 +11,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #a4daf2;
+    min-height: 100vh;
 }
 
 .login .card {
@@ -124,7 +125,7 @@ form {
     position:relative;
 }
 .student_dashboard {
-    background-color: #a4daf2;
+    background-image: url(images/main_bg_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -356,4 +357,42 @@ form {
 }
 .status_rfd{
     color: red;
+}
+.hod_dashboard{
+    background-image: url(images/main_bg_img.jpg);
+}
+.blueform{
+    min-height: 100vh;
+    background-image: url(images/hc_bg.jpg);
+}
+.blueform .card{
+    margin-top: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 2px solid #092545;
+}
+.blueform .card button{
+    background-color: #092545;
+}
+.blueform .card button:hover{
+    background-color: white;
+    color: #092545;
+}
+.blueform .card .in_card{
+    border: 1px solid #092545;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: 92%;
+}
+.c_header{
+    display: flex;
+}
+.c_head{
+    color: grey;
+    width: 300px;
+    margin-left: 2%;
+    margin-top: 2%;
+    
 }
