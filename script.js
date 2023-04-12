@@ -53,3 +53,9 @@ function add_row() {
 function refresh_row(){
     location.reload();
 }
+
+function getRandom() {
+    var app_num = document.getElementById("app_num");
+    var random =  Math.floor(Math.random() * 10000);
+    app_num.innerHTML = app_num.innerHTML + random;
+  }
